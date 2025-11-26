@@ -1,0 +1,5 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"><head><meta charset="UTF-8"><title>Novo</title></head><body>
+<h1>Novo Cliente</h1>
+<form th:action="@{'/clientes/salvar'}" th:object="${item}" method="post"><label>Nome: <input type="text" th:field="*{nome}"/></label><button type="submit">Salvar</button></form>
+</body></html>
