@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"><head><meta charset="UTF-8"><title>produtos</title></head><body>
+<h1>Produtos</h1>
+<a th:href="@{'/produtos/novo'}">Novo</a>
+<table border="1"><tr><th>ID</th><th>Nome</th></tr><tr th:each="i : ${items}"><td th:text="${i.id}">1</td><td th:text="${i.nome}">Nome</td></tr></table>
+</body></html>
